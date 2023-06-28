@@ -1,18 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package paquete2;
 
-/**
- *
- * @author reroes
- */
+
 public class PasajeUniversitario extends PasajeUrbano {
     
     public PasajeUniversitario(double pasaje){
         super(pasaje);
     }
+    
+    @Override
+   public void establecerValorPasaje(){
+       double op = (valorFijo * 30)/100;
+       valorPasaje = valorFijo - op;
+   }
+
     
        
     @Override
